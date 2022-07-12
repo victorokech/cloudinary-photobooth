@@ -297,4 +297,4 @@ With our code implementation complete, you should be able to see the following w
 
 Congratulations, we have built our own virtual photo booth powered by Cloudinary and Laravel. This is just the beginning, with Cloudinary you can create wonderful image management and manipulation products.
 
-Keep discovering more with Cloudinary, all you have to do is create [free](https://cloudinary.com/signup) account.
+Keep discovering more with Cloudinary, all you have to do is create a [free](https://cloudinary.com/signup) account.
