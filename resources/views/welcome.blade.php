@@ -27,7 +27,7 @@
 		</div>
 		<h2 class="m-3 mx-auto text-center fw-bold">Virtual Photo Booth Gallery with Laravel and Cloudinary</h2>
 		<p class="m-4">
-			Physical events are usually filled with several in-person brand activation activities and photo booths are always a must. We can make our space exciting and engaging to our audience by creating a photo booth that not only takes your photos but displays all the photos that will be taken throughout the event.
+			Physical events are often packed with several brand activation activities and photo booths are always a must. We can make our space exciting and engaging to our audience by creating a photo booth. The virtual photo booth will take user images apply cool effect transformations and display it in a gallery. You can test the demo below by uploading a photo.
 		</p>
 		
 		<div class="m-2 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">

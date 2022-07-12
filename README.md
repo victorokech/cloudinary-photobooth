@@ -4,11 +4,11 @@
 
 ## Introduction
 
-Physical events are often packed with several brand activation activities and photo booths are always a must. We can make our space exciting and engaging to our audience by creating a photo booth that takes your photo applies a cool effect transformation and displays it in a gallery.
+Physical events are often packed with several brand activation activities and photo booths are always a must. We can make our space exciting and engaging to our audience by creating a photo booth. The virtual photo booth will take user images apply cool effect transformations and display it in a gallery.
 
 ## PHPSandbox and Github
 
-All the code is available on [Github](https://github.com/victorokech/cloudinary-photobooth) and [PHPSandbox]() for a live demonstration of the Virtual Photo Booth Gallery.
+All the code is available on [Github](https://github.com/victorokech/cloudinary-photobooth) and [PHPSandbox]( https://phpsandbox.io/e/x/09rrc?layout=EditorPreview&defaultPath=%2F&theme=dark&showExplorer=no&openedFiles=) for a live demonstration of the Virtual Photo Booth Gallery.
 
 ## Prerequisites
 
@@ -45,7 +45,8 @@ The Laravel server should be up and running and when you open `http://localhost:
 Cloudinary has made integration easy for different programming languages with their Programmable Media SDK libraries and with a vibrant community, there are community libraries available as well. In this article, we will use Cloudinary's Laravel SDK.
 
 1. First things first, we will need a Cloudinary account. You can sign up for one [here](https://cloudinary.com). Don't worry it's free. Log in with your details and you will be redirected to the Dashboard. Take note of your Account details, the  Cloud Name, API Key, API Secret and the API Environment variable, we will need them later.
-   ![Cloudinary Dashboard](https://res.cloudinary.com/dgrpkngjn/image/upload/v1655976836/assets/cloudinary_dashboard.png)
+   
+	![Cloudinary Dashboard](https://res.cloudinary.com/dgrpkngjn/image/upload/v1655976836/assets/cloudinary_dashboard.png)
 2. Back at our terminal, we need to install [Cloudinary’s Laravel SDK](https://github.com/cloudinary-labs/cloudinary-laravel#installation). Run the following command:
    
    `composer require cloudinary-labs/cloudinary-laravel`
@@ -256,7 +257,7 @@ Open the file `app/Http/Livewire/PhotoBooth.php` and update it with the followin
       ]
 		];
 	   ```
-	- ### Upload Photo with Transformations
+- ### Upload Photo with Transformations
 	First, we upload the user image to Cloudinary, with an `aspect_ratio` of `0.75`, `crop` of `fill`, `gravity` set to `faces` and get the `secure_url` which we save in the variable `$photo`. The last line just prepends the transformed `$photo` to our `$this->gallery` array which we use to display the gallery. 
 
    ```php
@@ -293,7 +294,7 @@ With our code implementation complete, you should be able to see the following w
 
 ![Cloudinary Virtual Photo](https://res.cloudinary.com/dgrpkngjn/image/upload/c_scale,w_400/v1657629099/photo-booth/Xl3XxUTaukus92joF0MbF1HghboMZj-metaYmxhY2stbWFuLWhlcm8tYW5ncnktZXhwcmVzc2lvbi5qcGc_-_odrbyg.jpg)
 
-Congratulations, you've built your own virtual photo booth powered by Cloudinary and Laravel. This is just the beginning, with Cloudinary you can create wonderful image management and manipulation projects. 
+Congratulations, we have built our own virtual photo booth powered by Cloudinary and Laravel. This is just the beginning, with Cloudinary you can create wonderful image management and manipulation products. 
 
 Keep discovering more with Cloudinary, all you have to do is create [free](https://cloudinary.com/signup) account.
 
