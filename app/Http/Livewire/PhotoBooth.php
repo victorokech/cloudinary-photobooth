@@ -35,16 +35,21 @@
 				'photo'  => [
 					'required',
 					'image',
-					'max:1024'
+					'max:10240'
 				]
 			]);
 			
+			// transforming
 			$this->effectTransformations = [
-				'overlay' => [
-					'public_id' => "$this->folder/assets/$this->effect",
-					'flags'     => 'layer_apply',
-					'width'     => 1.0,
-					'height'    => 1.0,
+				['crop' => 'crop', 'aspect_ratio' => 0.75, 'gravity' => 'faces', 'height' => 1600],
+				[
+					'overlay' => [
+						'public_id' => "$this->folder/assets/$this->effect",
+						'flags'     => 'relative',
+						'crop'      => 'scale',
+						'width'     => 1.0,
+						'height'    => 1.0,
+					]
 				]
 			];
 			
@@ -52,10 +57,6 @@
 			$photo = cloudinary()->upload($this->photo->getRealPath(), [
 				'folder'         => $this->folder,
 				'tags'           => $this->tag,
-				'aspect_ratio'   => 0.75,
-				'crop'           => 'crop',
-				'height'         => 1600,
-				//'gravity' => 'faces',
 				'transformation' => $this->effectTransformations
 			])->getSecurePath();
 			

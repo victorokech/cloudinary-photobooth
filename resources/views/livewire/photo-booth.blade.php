@@ -22,10 +22,10 @@
 							<select id="effect" type="file" class="form-select @error('effect') is-invalid @enderror"
 							        wire:model="effect">
 								<option selected>Choose Photo Effect ...</option>
-								<option selected value="effect_one">Cloudinary Rocks Effect</option>
-								<option value="effect_two">Rose Flower Effect</option>
-								<option value="effect_three">Abstract Effect</option>
-								<option value="effect_four">Flower Petals Effect</option>
+								<option selected value="effect_one">Cloudinary Rocks</option>
+								<option value="effect_two">Rose Flower</option>
+								<option value="effect_three">Abstract</option>
+								<option value="effect_four">Flower Petals</option>
 							</select>
 							@error('effect')
 							<div class="invalid-feedback">{{ $message }}</div>
@@ -52,10 +52,10 @@
 				</form>
 			</div>
 			<div class="row mt-4">
-				@foreach($this->gallery as $gallery)
-					@if ($gallery)
+				@foreach($this->gallery as $galleryItem)
+					@if ($galleryItem)
 						<div class="col-sm-3 col-md-3 mb-3">
-							<img class="card-img-top img-thumbnail img-fluid" src="{{ $gallery }}" alt="Card image cap">
+							<img class="card-img-top img-thumbnail img-fluid" src="{{ $galleryItem }}" alt="Virtual Photo Booth"/>
 						</div>
 					@endif
 				@endforeach
